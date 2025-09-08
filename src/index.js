@@ -1,13 +1,13 @@
 import React from "react";
 import { render } from "react-dom";
-import timelineItems from "./data/timelineItems";
-import { TimeBlock } from "./components/TimeBlock";
+import { Dashboard } from "./pages/dashboard";
 
-const App = () => (
-  <div>
-    <h2>Start editing to see some magic happen {"\u2728"}</h2>
-    <TimeBlock />
-  </div>
-);
+const App = () => {
+  return (
+    <div>
+      <Dashboard />
+    </div>
+  );
+};
 
 render(<App />, document.getElementById("root"));

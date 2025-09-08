@@ -1,6 +1,22 @@
+---------- STEPS ----------
+
 [x] create the right folder structure
 [x] components
     [x] TimeBlock
+[x] pages
+    [x] dashboard
 [x] install libs
     [x] styled components
-[] order the data (matrix), taking into each one elements without conflicts (as much as possible)
+[x] order the data (matrix), taking into each one elements without conflicts (as much as possible)
+
+
+
+
+
+---------- USES ----------
+
+import * as S from "./styles";
+nice way to import styles where you can easily differ between components and style blocks
+
+export const TimeBlock...
+used named exports to "lock" each import, allowing being aware of what's being imported strictly
