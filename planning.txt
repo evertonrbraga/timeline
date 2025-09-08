@@ -7,7 +7,10 @@
     [x] dashboard
 [x] install libs
     [x] styled components
-[x] order the data (matrix), taking into each one elements without conflicts (as much as possible)
+[x] algorithms
+    [x] busy blocks (as much as possible in each line)
+    [x] get the months interval, from the oldest to the newest
+    [x] get the right days of each month
 
 
 
@@ -20,3 +23,5 @@ nice way to import styles where you can easily differ between components and sty
 
 export const TimeBlock...
 used named exports to "lock" each import, allowing being aware of what's being imported strictly
+
+by doing my algo structure, it makes my implementation very flexible and able to handle any source of data

@@ -1,17 +1,26 @@
 import React, { useState, useEffect } from "react";
 import timelineItems from "../data/timelineItems";
 import { TimeBlock } from "../components/TimeBlock";
-import { arrangeTimeline } from "../utils/utils";
+import {
+  arrangeTimelineBlocks,
+  getTimelineMonthRange,
+  createDaysArrayForMonths,
+} from "../utils/utils";
 
 export const Dashboard = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    const arranged = arrangeTimeline(timelineItems);
-    setData(arranged);
+    const busyBlocksArranged = arrangeTimelineBlocks(timelineItems);
+    console.log("busyBlocksArranged:", busyBlocksArranged);
   }, []);
 
-  console.log(data);
+  useEffect(() => {
+    const monthsInterval = getTimelineMonthRange(timelineItems);
+    const daysOfTheMonths = createDaysArrayForMonths(monthsInterval);
+    console.log("monthsInterval:", monthsInterval);
+    console.log("daysOfTheMonths:", daysOfTheMonths);
+  }, []);
 
   return (
     <div>
