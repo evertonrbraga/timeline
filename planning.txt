@@ -1,0 +1,6 @@
+[x] create the right folder structure
+[x] components
+    [x] TimeBlock
+[x] install libs
+    [x] styled components
+[] order the data (matrix), taking into each one elements without conflicts (as much as possible)
